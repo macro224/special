@@ -1,7 +1,7 @@
 <template>
   <div class="indexFrame rel" :style="{ marginBottom: bottom }">
     <div class="indexFrame__title abs">
-      <Title />
+      <Title content="致敬父爱" />
     </div>
     <div class="indexFrame__box fcc">
       <van-image width="104" height="74" :src="camera"></van-image>
@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import Title from '../../components/Title.vue'
+import Title from '@/views/father/components/Title.vue'
 export default {
   props: {
     bottom: {

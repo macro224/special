@@ -1,5 +1,5 @@
 <template>
-  <div class="title rel">
+  <div class="title rel" :style="{ marginBottom: bottom }">
     {{content}}
   </div>
 </template>
@@ -10,6 +10,10 @@ export default {
     content: {
       type: String,
       default: '标题'
+    },
+    bottom: {
+      type: String,
+      default: '0'
     }
   }
 }
@@ -21,6 +25,7 @@ export default {
 	color: #bb0524;
   line-height: 28px;
   font-weight: bold;
+  display: inline-block;
   &::after {
     content: "";
     height: 6px;
